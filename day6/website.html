@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+         /* *{
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            display: flex;
+         } */
+    .all{
+        justify-content:space-between;
+        display: flex;
+        font-size:18px;
+        background-color:white;
+        height: 60px;
+        /* margin: 0px;
+        padding: 0px; */
+        z-index: 100;
+        width: 100%;
+        align-items: center;
+        position: fixed;
+        overflow: hidden;
+        scrollbar-width: none;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        font-family:Arial, Helvetica, sans-serif;
+        letter-spacing:2px;
+    }
+    .nav{
+        display: flex;
+        gap: 50px;}
+        .s1{position: relative;
+
+        }
+        .ssp{
+            position:absolute;
+            width:100%;
+            height:120vh;
+        }
+        .sp{
+            position: absolute;
+            z-index: 150;
+            top:400px;
+            right:500px;
+            color: white;
+            font-size: 36px;
+            letter-spacing: 4px;
+        }
+        .container{
+            width: 100%;
+            position: relative;
+            height: auto;
+        }
+        .container img{
+            height: 100vh;
+            width: 100%;
+        } 
+        .content{
+            position: absolute;
+            top: 55%;
+            left: 20%;
+            color: white;
+            font-size: 39px;
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            overflow-y:hidden;
+        }
+        .container span{
+            padding:20px 9px 14px 13px;
+
+        }
+        h2{
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-bottom: 60px;
+            font-family: sans-serif;
+        }
+        p{
+            margin-left:20px ;
+        }
+        .container2{
+            width: 100%;
+            height: auto;
+            position: relative;
+            gap: 20px;
+            margin-left: 20px;
+        }
+        .cc1{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .container2 .i1{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 18%;
+            height:6vh;
+            padding: 4px;
+            align-content: center;
+        }
+        .container2 .i2{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            align-content: center;
+            left:25.7%
+        }
+        .container2 .i3{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            right:33%;
+            align-content: center;
+        }
+        .container2 .i4{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            right:7.5%;
+            align-content: center;
+        }
+        .cc2{
+            display: flex;
+            gap:20px;
+        }
+        .container2 .i5{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 18%;
+            height:6vh;
+            padding: 4px;
+            align-content: center;
+            left: 20p%;
+        }
+        .container2 .i6{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            align-content: center;
+            left:25.7%
+        }
+        .container2 .i7{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            right:33%;
+            align-content: center;
+        }
+        .container2 .i8{
+            position: absolute;
+            background-color: black;
+            color: white;
+            scrollbar-width: none;
+            width: 15%;
+            height:6vh;
+            padding: 4px;
+            right:7.5%;
+            align-content: center;
+        }
+        .cards{
+            display: flex;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .cards img{
+            width: 90%;
+            gap:5px;
+            margin-top:70px;
+            margin-left: 20px;
+        }
+        .cards button{
+            margin-left: 20px;
+            width: 80%;
+            padding: 8px;
+            border: none;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-top:20px;
+            height:7vh;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+        }
+        .cards button:hover{
+            background-color: rgba(0, 0, 0, 0.227);
+        }
+        .inp input{
+            width:97%;
+            height:6.5vh;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        ::placeholder{
+            font-size:1.1rem;
+            padding: 10px;
+        }
+        .foot{
+            width: 100%;
+            color: white;
+            height:15vh;
+            background-color: black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size:large;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="con"> -->
+    <div class="all">
+    <div class="a">
+        <a style="padding-left: 18px;" href="#hero"><span><b>BR</b></span> Architects</a>
+    </div>
+    <nav>
+    <div class="nav">
+        <a href="#1">Projects</a>
+        <a href="#2">About</a>
+        <a style="padding-right:20px;" href="#3">Contact</a>
+    </div>
+</nav>
+    </div>
+    <div class="container">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        <div class="content"><span style="background-color:rgba(0, 0, 0, 0.75)">BR</span> Architects</div>
+    </div>
+    <section id="1">
+    <h2 >Projects</h2>
+    <div class="container2">
+        <div class="cc1">
+         <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <div class="i1">Summer House</div>
+         <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <div class="i2">Winter House</div>
+         <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <div class="i3">Brick House</div>
+         <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <div class="i4">Summer House</div>
+        </div>
+        <div class="cc2">
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
+            <div class="i5">Summer House</div>
+         <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
+            <div class="i6">Winter House</div>
+         <img src="https://www.w3schools.com/w3images/house3.jpg" alt="">
+            <div class="i7">Brick House</div>
+         <img src="https://www.w3schools.com/w3images/house4.jpg" alt="">
+            <div class="i8">Summer House</div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="2">
+    <h2 id="about">About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos praesentium quod eaque totam, voluptate culpa natus, asperiores est minima odio mollitia aperiam molestiae consectetur blanditiis. Ut incidunt asperiores quam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates rerum, aliquam placeat eveniet error tempora at ratione dolores quibusdam quis perspiciatis voluptas eum dolorum sequi, voluptate vel debitis sint tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus esse non tempora nulla, inventore rem ipsum placeat molestias aut a eaque dicta odio dignissimos voluptates excepturi eos temporibus cum ut?</p>
+    <div class="cards">
+        <div class="card1">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="">
+        <p><b>John Doe</b></p><br>
+        <p style="color: rgba(0, 0, 0, 0.564);">CEO & Founder</p><br>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse.</p>
+        <button>Contact</button>
+        </div>
+        <div class="card2">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" >
+        <p><b>John Doe</b></p><br>
+        <p style="color: rgba(0, 0, 0, 0.564);">CEO & Founder</p><br>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse.</p>
+        <button>Contact</button>
+        </div>
+        <div class="card3">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="">
+        <p><b>John Doe</b></p><br>
+        <p style="color: rgba(0, 0, 0, 0.564);">CEO & Founder</p><br>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse.</p>
+        <button>Contact</button>
+        </div>
+        <div class="card4">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="">
+        <p><b>John Doe</b></p><br>
+        <p style="color: rgba(0, 0, 0, 0.564);">Architect</p><br>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse.</p>
+        <button>Contact</button>
+        </div>
+        </div>
+    </section>
+    <section id="3">
+        <h2 style="margin-bottom:30px; margin-top: 100px;">Contact</h2>
+        <hr style="margin-left: 20px; margin-top:0px;">
+        <p style="margin-top: 20px; margin-bottom: 20px;font-family:Arial, Helvetica, sans-serif;font-size:18px;">Lets get in touch and talk about your next projects</p>
+        <div class="inp">
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="text" placeholder="Subject"><br><br>
+        <input type="text" placeholder="Comment"><br><br>
+        </div>
+        <input style="margin-left: 20px;margin-top: 16px ;padding:8px;width: 20%;color: white;background-color: black;font-family: Arial, Helvetica, sans-serif;font-size: 16px;" type="submit" value="SEND MESSAGE">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="margin-top: 56px;margin-left: 20px;width:98%;height: 65vh;">
+        <div class="foot">Powered by <u>W3.css</u></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+        .bb {
+            margin: auto;
+            border: 8px solid;
+            width: 300px;
+            height: 560px;
+            border-radius: 35px;
+            background-color: antiquewhite;
+            background-image: url(https://i.pinimg.com/originals/05/5b/dc/055bdc52b9c5e6a1444b517cb5e17a9d.jpg);
+            z-index: 1;
+            overflow: scroll;
+            scrollbar-width: none;
+        }
+        .a {
+            background-color: green;
+            width: 300px;
+            height: 11vh;
+            border-top-left-radius: 27px;
+            border-top-right-radius: 27px;
+            z-index: 10;
+        }
+        .ab {
+            margin-top: 70px;
+        }
+        .n{
+            background-color: chartreuse;
+            padding: 1px;
+        }
+        .f{
+            position: fixed;
+            background-color:rgba(65, 71, 75, 0.953);
+            width: 300px;
+            height: 8vh;
+            border-bottom-left-radius: 27px;
+            border-bottom-right-radius: 27px;
+            z-index: 12;
+            bottom: 10px;
+        }
+        input {
+            
+            width: 250px;
+            height: 35px;
+            border-radius: 20px;
+            background-color:black;
+        }
+         .k{
+            position: absolute;
+            bottom:11px;
+            z-index:15;
+         }
+         ::placeholder{
+            text-indent:10px;
+            font-size: 17px;
+            color: rgb(215, 199, 199);
+         }
+         .w{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            justify-content: center;
+            position: sticky;
+            top:60px;
+        }
+        .s{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        .t {
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            padding: 7px;
+        }
+        .z {
+            text-align: right;
+            height: 60px; 
+        }
+        .x {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            /* overflow: hidden; if you give this sticky wont work */  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bb">
+        <div class="k">
+            <label for="1"></label>
+            <input  type="text"  placeholder="🗀 &nbsp; Message &nbsp;   🔗  &nbsp;  ₹ &nbsp;   📷" id="1">
+            <span style="background-color:rgb(90, 238, 90);padding: 6px; border-radius:30px;">🎙️</span>
+        </div>
+        <div class="a" style="position: relative;position: fixed;">
+            <span style="font-size:30px;position: relative;top:-8px;"><b>←</b></span>
+            <img style="margin-top:13px;" src="https://cdn-icons-png.flaticon.com/512/6833/6833591.png" alt="" height="40px" width="40px">
+            <span style="color: white;top:25px;position: absolute;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Best Friend</span>
+            <span style="position: absolute;right: 50px;font-size: 21px;top: 19px;background-color:dodgerblue; border-radius: 10px;">🎦</span><span style="position: absolute;right:20px;font-size:28px;top: 19px;color: white;"><span>⫶</span>  
+        </div>
+        <div class="f">
+        </div>
+        <div class="x">
+            <div class="z">
+                <p class="w ab"><span class="n">1 Jan</span></p>
+                <p><span class="s">Hi</span></p>
+                <p><span class="s">Good marning!</span></p>
+            </div><br><br>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <p class="w"><span class="n">2 Jan</span></p>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <p class="w"><span class="n">3 Jan</span></p>
+            <div class="z">
+                <!-- <p class="w"><span class="n">3 Jan</span></p> -->
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <p class="w"><span class="n">4 Jan</span></p>
+            <div class="y">
+                <p><span class="t">Good marning!</span></p>
+                <p><span class="t">How are you</span></p>
+            </div>
+            <div class="z">
+                <p><span class="s">Fine </span></p>
+                <p><span class="s">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Fine </span></p>
+                <p><span class="t">What about you?</span></p>
+            </div>
+
+            <div class="z">
+                <p><span class="s">Good marning!</span></p>
+                <p><span class="s">How are you</span></p>
+            </div>
+            <div class="y">
+                <p><span class="t">Fine </span></p>
+                <p><span class="t">What about you?</span></p>
+            </div>
+            <p class="w"><span class="n">5 Jan</span></p>
+            <div class="z">
+                <p><span class="t">Fine </span></p>
+                <p><span class="t">What about you?</span></p>
+            </div>
+            <div class="y">
+                <p><span class="s">Good marning!</span></p>
+                <p><span class="s">How are you</span></p>
+            </div>
+         <div class="z">
+        <p><span class="t">Fine </span></p>
+        <p><span class="t">What about you?</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Good marning!</span></p>
+        <p><span class="s">How are you</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">Fine </span></p>
+        <p><span class="t">What about you?</span></p>
+    </div>
+    <p class="w"><span class="n">6 Jan</span></p>
+    <div class="y">
+        <p><span class="s">Good marning!</span></p>
+        <p><span class="s">How are you</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">Fine </span></p>
+        <p><span class="t">What about you?</span></p>
+        </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <p class="w"><span class="n">7 Jan</span></p>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <p class="w"><span class="n">8 Jan</span></p>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    <div class="y">
+        <p><span class="s">Where are you?</span></p>
+        <p><span class="s">Dear!</span></p>
+    </div>
+    <div class="z">
+        <p><span class="t">I am in hyd</span></p>
+        <p><span class="t">hooo!</span></p>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

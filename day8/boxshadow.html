@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .boxes{
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        border: 2px solid black;
+        align-items: center;
+        text-align: center;
+        padding: 11px;
+        width: 75%;
+        box-shadow:1px 1px 4px 2px black, 2px 2px 20px 4px aqua inset;
+    }
+    .container{
+        margin-top: 40px;
+        width: 100%;
+        display: grid;
+        grid-template-columns:20% 20% 20%;
+        gap: 80px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13,.c14,.c15,.c16,.c17,.c18,.c19,.c20,.c21{
+       width:240px;
+       height:300px;
+       background-color: antiquewhite;
+       align-content: center;
+       text-align: center;
+       box-shadow:1px 1px 8px 3px black;
+       border-radius: 15px;}
+    .c1:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       
+    }
+    .c2:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #73bcd8;
+       color: rgb(32, 44, 45);
+background: rgb(255, 255, 255);
+text-shadow: rgb(128, 141, 147) 0px 1px, rgb(205, 210, 213) -1px 0px, rgb(128, 141, 147) -1px 2px, rgb(205, 210, 213) -2px 1px, rgb(128, 141, 147) -2px 3px, rgb(205, 210, 213) -3px 2px, rgb(128, 141, 147) -3px 4px, rgb(205, 210, 213) -4px 3px, rgb(128, 141, 147) -4px 5px, rgb(205, 210, 213) -5px 4px, rgb(128, 141, 147) -5px 6px, rgb(205, 210, 213) -6px 5px, rgb(128, 141, 147) -6px 7px, rgb(205, 210, 213) -7px 6px, rgb(128, 141, 147) -7px 8px, rgb(205, 210, 213) -8px 7px;
+user-select: auto;
+       
+    }
+    .c3:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: transparent;
+background: rgb(255, 255, 255);
+text-shadow: rgba(179, 179, 179, 0.4) -4px 4px, rgba(153, 153, 153, 0.2) -3px 3px, rgba(179, 179, 179, 0.2) -2px 2px, rgba(179, 179, 179, 0.2) -1px 1px, rgba(128, 128, 128, 0.5) 0px 0px, rgba(77, 77, 77, 0.6) 1px -1px, rgba(77, 77, 77, 0.7) 2px -2px, rgba(82, 82, 82, 0.8) 3px -3px, rgba(77, 77, 77, 0.9) 4px -4px, rgb(77, 77, 77) 5px -5px;
+user-select: auto;
+       
+    }
+    .c4:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(0, 93, 255);
+text-shadow: rgb(0, 230, 230) -5px 5px 0px, rgb(1, 204, 204) -10px 10px 0px, rgb(0, 189, 189) -15px 15px 0px;
+user-select: auto;
+       
+    }
+    .c5:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: transparent;
+background: rgb(255, 255, 255);
+text-shadow: rgba(179, 179, 179, 0.4) -4px 4px, rgba(153, 153, 153, 0.2) -3px 3px, rgba(179, 179, 179, 0.2) -2px 2px, rgba(179, 179, 179, 0.2) -1px 1px, rgba(128, 128, 128, 0.5) 0px 0px, rgba(77, 77, 77, 0.6) 1px -1px, rgba(77, 77, 77, 0.7) 2px -2px, rgba(82, 82, 82, 0.8) 3px -3px, rgba(77, 77, 77, 0.9) 4px -4px, rgb(77, 77, 77) 5px -5px;
+user-select: auto;
+}
+.c1,.c10,.c21,.c16{
+    background-color: lightpink;}
+.c2,.c4,.c11,.c20,.c7{
+    background-color:lightslategray;
+}
+.c3,.c9,.c18,.c14{
+    background-color:lightskyblue;
+}
+.c6,.c13,.c19{
+    background-color:lightgreen
+}
+    .c6:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(0, 0, 0);
+background: rgb(255, 255, 255);
+text-shadow: rgb(188, 188, 188) 2px 2px 0px, rgb(156, 156, 156) 4px 4px 0px;
+user-select: auto;
+       
+    }
+    .c7:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: transparent;
+background: text rgb(102, 102, 102);
+text-shadow: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+user-select: auto;
+       
+    }
+    .c8:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(35, 35, 35);
+text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(73, 255, 24) 0px 0px 20px, rgb(73, 255, 24) 0px 0px 30px, rgb(73, 255, 24) 0px 0px 40px, rgb(73, 255, 24) 0px 0px 55px, rgb(73, 255, 24) 0px 0px 75px;
+user-select: auto;
+       
+    }
+    .c9:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(51, 51, 51);
+text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(255, 45, 149) 0px 0px 20px, rgb(255, 45, 149) 0px 0px 30px, rgb(255, 45, 149) 0px 0px 40px, rgb(255, 45, 149) 0px 0px 50px, rgb(255, 45, 149) 0px 0px 75px;
+user-select: auto;
+       
+    }
+    .c10:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(236, 233, 233);
+text-shadow: rgb(71, 71, 71) 3px 5px 2px;
+user-select: auto;
+       
+    }
+    .c11:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(0, 89, 0);
+background: rgb(255, 252, 168);
+text-shadow: rgb(255, 252, 168) 2px 2px 0px, rgb(156, 156, 156) 4px 4px 0px;
+user-select: auto;
+       
+    }
+    .c12:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(51, 51, 51);
+background: rgb(255, 255, 255);
+text-shadow: rgb(255, 255, 255) 2px 2px 0px, rgba(0, 0, 0, 0.15) 5px 4px 0px;
+user-select: auto;
+       
+    }
+    .c13:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(255, 255, 255);
+text-shadow: rgb(64, 116, 181) 2px 2px 0px, rgb(64, 116, 181) 2px -2px 0px, rgb(64, 116, 181) -2px 2px 0px, rgb(64, 116, 181) -2px -2px 0px, rgb(64, 116, 181) 2px 0px 0px, rgb(64, 116, 181) 0px 2px 0px, rgb(64, 116, 181) -2px 0px 0px, rgb(64, 116, 181) 0px -2px 0px;
+user-select: auto;
+       
+    }
+    .c14:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(224, 223, 220);
+background: rgb(85, 102, 119);
+letter-spacing: 0.1em;
+text-shadow: rgb(255, 255, 255) 0px -1px 0px, rgb(46, 46, 46) 0px 1px 0px, rgb(44, 44, 44) 0px 2px 0px, rgb(42, 42, 42) 0px 3px 0px, rgb(40, 40, 40) 0px 4px 0px, rgb(38, 38, 38) 0px 5px 0px, rgb(36, 36, 36) 0px 6px 0px, rgb(34, 34, 34) 0px 7px 0px, rgb(32, 32, 32) 0px 8px 0px, rgb(30, 30, 30) 0px 9px 0px, rgb(28, 28, 28) 0px 10px 0px, rgb(26, 26, 26) 0px 11px 0px, rgb(24, 24, 24) 0px 12px 0px, rgb(22, 22, 22) 0px 13px 0px, rgb(20, 20, 20) 0px 14px 0px, rgb(18, 18, 18) 0px 15px 0px, rgba(0, 0, 0, 0.9) 0px 22px 30px;
+user-select: auto;
+       
+    }
+    .c15:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(217, 217, 217);
+background: rgb(232, 232, 232);
+text-shadow: rgba(255, 255, 255, 0.1) -1px -1px 1px, rgba(0, 0, 0, 0.5) 1px 1px 1px;
+user-select: auto;
+       
+    }
+    .c16:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       text-shadow: 4px 4px 2px rgba(0,0,0,0.63);
+       
+    }
+    .c17:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       font-family: "Audiowide", sans-serif;
+       
+    }
+    .c18:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(97, 97, 97);
+background: rgb(186, 186, 186);
+text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+user-select: auto;
+       
+    }
+    .c19:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(51, 51, 51);
+text-shadow: rgb(255, 255, 255) 0px -1px 4px, rgb(255, 255, 0) 0px -2px 10px, rgb(255, 128, 0) 0px -10px 20px, rgb(255, 0, 0) 0px -18px 40px;
+user-select: auto;
+       
+    }
+    .c20:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;
+       color: rgb(255, 255, 255);
+background: rgb(35, 35, 35);
+text-shadow: rgb(255, 255, 255) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(73, 255, 24) 0px 0px 20px, rgb(73, 255, 24) 0px 0px 30px, rgb(73, 255, 24) 0px 0px 40px, rgb(73, 255, 24) 0px 0px 55px, rgb(73, 255, 24) 0px 0px 75px;
+user-select: auto;
+       
+    }
+    .c21:hover{
+       transform: scale(1.1);
+       transition: transform 1s;
+       text-shadow: 2px 2px 2px #CE5937;color: rgba(0, 0, 0, 0.6);
+background: rgb(98, 149, 82);
+text-shadow: rgba(0, 0, 0, 0.2) 2px 8px 6px, rgba(255, 255, 255, 0.3) 0px -5px 35px;
+user-select: auto;
+       
+    }
+
+</style>
+</head>
+<body>
+    <div class="boxes">
+    <h1 class="box">Box Shadow and Font-families</h1>
+</div>
+<div class="container">
+    <div class="c1"><h1>Oswald</h1></div>
+    <div class="c2"><h1>Kanit</h1></div>
+    <div class="c3"><h1>Josefin Slab</h1></div>
+    <div class="c4"><h1>Danfo</h1></div>
+    <div class="c5"><h1>Great Vibes</h1></div>
+    <div class="c6"><h1>Playball</h1></div>
+    <div class="c7"><h1>Lobstar</h1></div>
+    <div class="c8"><h1>Rowdies</h1></div>
+    <div class="c9"><h1>Pacifico</h1></div>
+    <div class="c10"><h1>Josefin</h1></div>
+    <div class="c11"><h1>Micro 5</h1></div>
+    <div class="c12"><h1>Jacquard 12</h1></div>
+    <div class="c13"><h1>Flower Plants</h1></div>
+    <div class="c14"><h1>Shadow</h1></div>
+    <div class="c15"><h1>Tiny</h1></div>
+    <div class="c16"><h1>Resume</h1></div>
+    <div class="c17"><h1>Permanant</h1></div>
+    <div class="c18"><h1>Abril fatface</h1></div>
+    <div class="c19"><h1>DM serif</h1></div>
+    <div class="c20"><h1>Playwrite</h1></div>
+    <div class="c21"><h1>Jersey</h1></div>
+</div>
+</body>
+</html>
