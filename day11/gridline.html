@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pa>div{
+            padding: 10px;
+            border: solid;
+            align-content: center;
+        }
+        .pa{
+            text-align: center;
+            gap:3px;
+            grid-template-rows: 80px 80px 80px 80px 80px 100px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas:
+            "n1 n2 n3 n3" 
+            "n1 n2 n3 n3"
+            "n1 n5 n6 n7"
+            "n4 n5 n6 n7"
+            "n4 n8 n9 n7"
+            "n4 n8 n9 n7"
+    
+        }
+        .c1{
+            grid-area: n1;
+            background-color: red;
+        }
+        .c2{
+            grid-area: n2;
+            background-color:aqua;
+        }
+        .c3{
+            grid-area: n3;
+            background-color: brown;
+        }
+        .c4{
+            grid-area: n4;
+            background-color: navajowhite;
+        }
+        .c5{
+            grid-area: n5;
+            background-color: brown;
+        }
+        .c6{
+            grid-area: n6;
+            background-color: palevioletred;
+        }
+        .c7{
+            grid-area: n7;
+            background-color: orangered;
+        }
+        .c8{
+            grid-area: n8;
+            background-color: blue;
+        }
+        .c9{
+            grid-area: n9;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="pa">
+        <div class="c1">header</div>
+        <div class="c2">nav</div>
+        <div class="c3">section</div>
+        <div class="c4">nav1</div>
+        <div class="c5">aside</div>
+        <div class="c6">article</div>
+        <div class="c7">header</div>
+        <div class="c8">section1</div>
+        <div class="c9">footer</div>
+    </div>
+</body>
+</html>
