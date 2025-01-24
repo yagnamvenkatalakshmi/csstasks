@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .con{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow: hidden;
+        border: solid;
+        width: 50vw;
+        height: 80vh;
+        /* transform: translate(300px,50px); */
+        background-color: antiquewhite;
+    }
+    .a:hover~ img{
+        transition: 10s;
+        transform:translate(100px,200px);
+    }
+    .b:hover~ img{
+         /*scale(1.5)*/
+         transform: rotate(1800deg);
+         transition:1s;
+    }
+    .c:hover~ img{
+        transition: 10s;
+        transform: scale(1.5);
+    }
+    .d:hover~ img{
+        transition: 10s;
+        transform: skew(10deg);
+    }
+   button{
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 4%;
+   }
+   .e{
+  margin-left: 20%;
+   }
+    </style>
+</head>
+<body>
+    <div class="con">
+       <button class="a">Translate</button>
+       <button class="b">rotate</button>
+       <button class="c">scale</button>
+       <button class="d">skew</button><br>
+      <img class="e" src="https://cdn.pixabay.com/photo/2024/01/02/14/58/leaf-8483401_640.jpg" alt="" width="60%" height="30%">
+    </div>
+</body>
+</html>

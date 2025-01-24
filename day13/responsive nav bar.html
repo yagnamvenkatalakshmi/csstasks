@@ -4,20 +4,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+ body {
+            margin-left:2%;
+        }
+
+        .a {
+            display: flex;
+            gap:18px;
+        }
+
+        .b {
+            margin-top:10%;
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+        }
+
+        .c1 {
+          margin-top: 5%;
+            border: 2px solid;
+            width: 27vw;
+            /* width: 62%; */
+            height: 130%;
+            padding-left:6%;
+            border-radius: 10px;
+            background-color: white;
+            scrollbar-width: none;
+            overflow: hidden;
+            box-shadow: 4px 4px 4px 2px  green;
+        }
+
+        .container {
+            margin-top:5%;
+            display: grid;
+            grid-template-columns:auto auto auto;
+            justify-content: space-around;
+            row-gap:20%;
+            scrollbar-width: none;
+        }
+        @media screen and (width>550px)and (width<750px){
+            .container{
+                grid-template-columns: auto auto;
+                row-gap: 13%;
+            }
+            .c1{width: 90%; 
+            }
+        }
+        @media screen and (width<550px){
+            .container{
+                grid-template-columns: auto;
+                row-gap: 5%;
+            }
+            .c1{width: 90%; 
+        }
+    }
     body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5%;
+  width: 100%;
   overflow: hidden;
-  background-color: #333333db;
+  background-color: #333333f7;
+  position: fixed;
+
 }
 
 .nav a {
   float: left;
-  display: block;
-  color: #10d5e3;
+  color: #10e321;
   text-align: center;
   padding: 1% 5%;
   text-decoration: none;
@@ -26,7 +85,7 @@
 }
 .nav a:hover {
   background-color: #ddd;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 .nav .icon {
   display: none;
@@ -55,7 +114,6 @@
 </style>
 </head>
 <body>
-
   <div class="nav" id="my">
     <a href="#Home">home</a>
     <a href="#service">servive</a>
@@ -65,6 +123,123 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
+</div>
+  <div class="container">
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top: 13px;"
+                    src="https://a.slack-edge.com/2a8628a/img/plugins/stripe/service_512.png" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Stripe</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed  of the<br> with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top: 13px;"
+                    src="https://www.drupal.org/files/project-images/MC_Logo_0.jpg" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Malichimp</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed of the<br>with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top: 13px;"
+                    src="https://store-images.s-microsoft.com/image/apps.23871.13668225141277943.68205d94-7cbe-41f0-893f-53305fceb682.4c98395a-28d0-4eee-9b6e-08ecd210e980" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Drobox</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed of the<br>with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top: 13px;"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReIMQ7nHZEXmmJXelyHXjQZW2upg5rPSemWw&s" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Shopify</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed of the<br> with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top: 13px;"
+                    src="https://media.licdn.com/dms/image/v2/D560BAQHiRLz23b2ZlA/company-logo_400_400/company-logo_400_400/0/1725661280883/atlassian_logo?e=2147483647&v=beta&t=Lu8qLPwXwUqT5GGz5-vNRR4n_qcmrQU0HPtDkGeYTug" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Atlassian</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed of the<br>with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+    <div class="c1">
+        <div class="a">
+            <div>
+                <img style="margin-top:13%;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/640px-Salesforce.com_logo.svg.png" alt="" width="90%"
+                    height="70vh">
+            </div>
+            <div class="m">
+                <p><b>Salesforce</b></p>
+                <div>Payment service</div>
+                <div>****</div>
+            </div>
+        </div>
+        <div>Get more contest on your users detailed of the<br> with stripe data inside platform</div>
+        <div class="b">
+            <div>Installed 172 items</div>
+            <div>View></div>
+        </div>
+    </div>
+  </div>
 </div>
 <script>
 function myFunction() {
@@ -76,6 +251,5 @@ function myFunction() {
   }
 }
 </script>
-
 </body>
 </html>

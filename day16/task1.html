@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(192, 200, 185, 0.247);
+        }
+        @keyframes parent1{
+        0%,100%{
+            transform: translateY(0px);  
+            background-color: brown;
+        }
+        50%{
+            transform: translateY(-150px); 
+            background-color: chartreuse;  
+        }
+        }
+        @keyframes parent2{
+        0%{transform: scale(1);
+            background-color: rgb(232, 11, 140);
+          
+        }
+        50%{
+            transform:scale(1.5);
+            background-color: rgb(241, 21, 219);
+        }
+        }
+        .g{
+            height: 100vh;
+            align-content:center;
+        }
+        .p1{
+            display: flex;
+            column-gap: 3%;
+            justify-content: center;
+        }
+        .p2{
+            display:flex;
+            column-gap:0.5%;
+            justify-content: center;
+            margin-top:3%;
+        }
+        .a,.b,.c{
+            animation-name: parent1;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            width: 4%;
+            height: 8vh;
+            border-radius: 50%;
+            background-color: aqua;
+            animation-fill-mode: forwards;
+
+        }
+        .d,.e,.f{
+            width: 1.1%;
+            height: 2.5vh;
+            border-radius: 50%;
+            background-color: rgba(228, 9, 177, 0.442);
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        .d{
+            animation-name: parent2;
+            animation-delay: 0.6s;
+        }
+        .e{
+            animation-name: parent2;
+            animation-delay: 0.8s;
+        }
+        .f{
+            animation-name: parent2;
+            animation-delay: 1s;
+        }
+        .a{
+            animation-delay: 0.6s;
+        }
+        .b{
+            animation-delay: 0.9s;
+        }
+        .c{
+            animation-delay: 1.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="g">
+    <div class="p1">
+        <div class="a" style="animation-timing-function: ease-in-out;"></div>
+        <div class="b" style="animation-timing-function: linear;"></div>
+        <div class="c" style="animation-timing-function:ease-in;"></div>
+    </div><br>
+    <div class="p2">
+        <div style="animation-timing-function: ease;" class="d"></div>
+        <div style="animation-timing-function: ease;" class="e"></div>
+        <div style="animation-timing-function:ease;" class="f"></div>
+    </div>
+</div>
+</body>
+</html>
